@@ -25,6 +25,7 @@ $id = $log->put($content);
 $urls = Config::Get('urls');
 
 $out->success = true;
+file_put_contents('/tmp/log-debug.txt', $content);
 $out->id = $id->get();
 $out->url = $urls['baseUrl'] . "/" . $out->id;
 $out->raw = $urls['apiBaseUrl'] . "/1/raw/" . $out->id;
