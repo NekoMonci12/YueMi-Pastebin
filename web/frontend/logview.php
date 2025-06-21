@@ -10,11 +10,11 @@ $log = new Log($id);
 
 $shouldWrapLogLines = filter_var($_COOKIE["WRAP_LOG_LINES"] ?? "true", FILTER_VALIDATE_BOOLEAN);
 
-$title = "mclo.gs - Paste, share & analyse your Minecraft logs";
+$title = "YueMi Logs - based on mclo.gs";
 $description = "Easily paste your Minecraft logs to share and analyse them.";
 
 if (!$log->exists()) {
-    $title = "Log not found - mclo.gs";
+    $title = "Log not found - YueMi Logs";
     http_response_code(404);
 } else {
     $codexLog = $log->get();
@@ -46,7 +46,7 @@ if (!$log->exists()) {
     <meta charset="utf-8" />
     <meta name="theme-color" content="#2d3943" />
 
-    <title><?= $title; ?> - mclo.gs</title>
+    <title><?= $title; ?> - YueMi Logs</title>
 
     <base href="/" />
 
@@ -61,11 +61,12 @@ if (!$log->exists()) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="mclo.gs" />
+    <meta property="og:site_name" content="YueMi Logs" />
     <meta property="og:title" content="<?= $title; ?>" />
     <meta property="og:description" content="<?= $description; ?>" />
     <meta property="og:url" content="<?= $urls['baseUrl'] . "/" . $id->get(); ?>" />
 
+    <!--
     <script>
         let _paq = window._paq = window._paq || [];
         _paq.push(['disableCookies']);
@@ -78,6 +79,7 @@ if (!$log->exists()) {
             g.async = true; g.src = '/data.js'; s.parentNode.insertBefore(g, s);
         })();
     </script>
+    -->
 </head>
 <body class="log-body">
 <header class="row navigation">
@@ -188,7 +190,7 @@ if (!$log->exists()) {
             </div>
             <div class="log-notice">
                 This log will be saved for 90 days from its last view.<br />
-                <a href="mailto:<?= $legal['abuseEmail'] ?>?subject=Report%20mclo.gs/<?= $id->get(); ?>">Report abuse</a>
+                <a href="mailto:<?= $legal['abuseEmail'] ?>?subject=Report%20yuemi.org/<?= $id->get(); ?>">Report abuse</a>
             </div>
         <?php else: ?>
             <div class="not-found">

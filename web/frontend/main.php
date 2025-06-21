@@ -9,7 +9,7 @@ $storage = \Config::Get('storage');
         <meta charset="utf-8" />
         <meta name="theme-color" content="#2d3943" />
 
-        <title>mclo.gs - Paste, share & analyse your Minecraft logs</title>
+        <title>YueMi Logs - Pastebin based onc mclo.gs</title>
 
         <base href="/" />
 
@@ -47,16 +47,18 @@ $storage = \Config::Get('storage');
                     <a class="menu-item" href="/#info">
                         <i class="fa fa-info-circle"></i> Info
                     </a>
+                    <!--
                     <a class="menu-item" href="/#plugin">
                         <i class="fa fa-database"></i> Plugin
                     </a>
                     <a class="menu-item" href="/#mod">
                         <i class="fa fa-puzzle-piece"></i> Mod
                     </a>
+                    -->
                     <a class="menu-item" href="/#api">
                         <i class="fa fa-code"></i> API
                     </a>
-                    <a class="menu-social btn btn-black btn-notext btn-large btn-no-margin" href="https://github.com/aternosorg/mclogs" target="_blank">
+                    <a class="menu-social btn btn-black btn-notext btn-large btn-no-margin" href="https://github.com/NekoMonci12/YueMi-Pastebin" target="_blank">
                         <i class="fab fa-github"></i>
                     </a>
                 </div>
@@ -134,6 +136,7 @@ $storage = \Config::Get('storage');
                 </div>
             </div>
         </div>
+        <!--
         <div class="row dark plugin" id="plugin">
             <div class="row-inner">
                 <div class="article left">
@@ -200,6 +203,7 @@ $storage = \Config::Get('storage');
                 </div>
             </div>
         </div>
+        -->
         <div class="row dark api" id="api">
             <div class="row-inner">
                 <div class="article left">

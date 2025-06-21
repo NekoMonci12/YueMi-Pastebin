@@ -11,7 +11,7 @@ $legal = Config::Get('legal');
         <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Play:400,700">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet" />
 
-        <title>API Documentation - mclo.gs</title>
+        <title>API Documentation - YueMi Logs</title>
 
         <base href="//<?=str_replace("api.", "", $_SERVER['HTTP_HOST']); ?>/" />
 
@@ -24,6 +24,7 @@ $legal = Config::Get('legal');
         <meta name="description" content="Easily paste your Minecraft logs to share and analyse them.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
+        <!--
         <script>
             let _paq = window._paq = window._paq || [];
             _paq.push(['disableCookies']);
@@ -36,6 +37,7 @@ $legal = Config::Get('legal');
                 g.async=true; g.src='/data.js'; s.parentNode.insertBefore(g,s);
             })();
         </script>
+        -->
     </head>
     <body>
         <header class="row navigation">
